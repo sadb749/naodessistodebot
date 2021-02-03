@@ -762,5 +762,18 @@ case 'lofi':
 					}
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
+
 		}
 	})
+break
+case 'sortear':
+if(args[0]=='pessoa'){
+if(!isAdmin) return msg.reply('Apenas administradores')
+let sortNumber = Math.floor(Math.random() * participants.length);
+let sortUser = participants[sortNumber]
+let sortMention = await client.getContactById(sortUser.id._serialized)
+sortUser = sortUser.id._serialized.toString().replace('@c.us', '')
+client.sendMessage(from,`[ *USUARIO SORTEADO* ]\n\nParabéns
+@${sortUser}, você foi sorteado pelo sistema de sorteios KILLUA BOT`,{
+mentions: [sortMention] })
+}
