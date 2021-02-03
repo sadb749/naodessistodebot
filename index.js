@@ -766,14 +766,9 @@ case 'lofi':
 		}
 	})
 break
-case 'sortear':
-if(args[0]=='pessoa'){
-if(!isAdmin) return msg.reply('Apenas administradores')
-let sortNumber = Math.floor(Math.random() * participants.length);
-let sortUser = participants[sortNumber]
-let sortMention = await client.getContactById(sortUser.id._serialized)
-sortUser = sortUser.id._serialized.toString().replace('@c.us', '')
-client.sendMessage(from,`[ *USUARIO SORTEADO* ]\n\nParabéns
-@${sortUser}, você foi sorteado pelo sistema de sorteios KILLUA BOT`,{
-mentions: [sortMention] })
-}
+				case 'loli1':
+					memein = await kagApi.memeindo()
+					buffer = await getBuffer(`https://i.imgur.com/iphQUGi.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'hmm, então quer ver loli?'})
+      		}
+	})
