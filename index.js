@@ -765,10 +765,3 @@ case 'lofi':
 
 		}
 	})
-break
-				case 'loli1':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/iphQUGi.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'hmm, então quer ver loli?'})
-      		}
-	})
